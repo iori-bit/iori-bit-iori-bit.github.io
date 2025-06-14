@@ -1,0 +1,134 @@
+@charset "UTF-8";
+#search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-box {
+    display: inline-flex;
+    position: relative;
+    width: 600px;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #004aad;
+    border-radius: 50px;
+}
+
+#search-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+#area-search {
+    border-radius:50px;
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+#suggestion-box {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: none;
+    border-radius:5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#suggestion-box div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#suggestion-box div:hover {
+    background-color: #f0f0f0;
+}
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .suggestion-image {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+  
+.map-container{
+    padding-bottom:150px ;
+}
+.map-container p{
+    width: 200px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    background-color:#004aad;
+    margin: 20px auto;
+}
+.campus-map {
+    position: relative;
+    margin: 0 auto;
+}
+
+.campus-map img {
+    display: block;
+    width: 70%;
+   margin: auto;
+}
+
+.area-overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.area-overlay {
+    z-index: -1;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+@keyframes pulse-highlight {
+    0% { background-color: rgb(0, 74, 173,.8); }
+    50% { background-color:  rgb(0, 74, 173); }
+    100% { background-color:  rgb(0, 74, 173,.8); }
+}
+
+.area-overlay.highlight {
+    z-index: -1;
+    animation: pulse-highlight 2s infinite;
+}
+
+
+/*スマホ版.maps---------------------------*/
+@media(max-width:600px){
+    #search-box {
+        width: 300px;
+    }
+    #area-search {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .map-container p{
+        width: 150px;
+        font-size: 25px;
+    }
+}

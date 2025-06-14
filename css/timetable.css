@@ -1,0 +1,140 @@
+@charset "UTF-8";
+caption {
+    width: 250px;
+    margin:0 auto 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    text-align: center;
+    color: #fff;
+    background-color: #004aad;
+}
+.timeTable {
+    padding-left: 20px;
+    margin:auto 10px;
+    overflow-x: auto;
+    clear: both;
+    display: flex;
+    margin-bottom: 10%;
+    padding-bottom:50px;
+}
+.col2of4 {	
+    width: 200vw;
+    zoom: 1;
+    position: relative;
+    z-index: -1;
+    margin: 0 10px ;
+}
+.tableBox{
+    margin: 0 10px;
+}
+.tableBox table {
+    width: 30vw;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none; 
+}
+.tableBox th,td {
+    border: 3px solid #fff;
+    border-radius: 15px;
+}
+.tableBox th {
+    width: 70px;
+    font-size:12px;
+    color: #fff;
+    text-align: center;
+    background-color: #004aad;
+    vertical-align: top;
+}
+.tableBox td {
+    padding: 0px 10px;
+    font-size: 15px;
+    text-align: center; 
+}
+.borderNone{
+    border-bottom: 1px solid #004aad;
+}
+.tableBox th.just {
+    padding-top: 7px;
+    box-sizing:border-box;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+}
+.color02 {
+    background: #e5e5e5;
+}
+.tab-list {
+    display: flex;
+    padding:0;
+  }
+  .tab-list li {
+    list-style: none;
+    margin: auto;
+    width: 130px;
+    text-align: center;
+    border: 1px solid rgb(0, 74, 173,.4);
+    outline: 1px solid rgb(0, 74, 173,.4);
+    outline-offset: 3px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.5rem;
+  }
+  .tab-list li.is-active {
+    background: rgb(0, 74, 173,.8);
+    color: #fff;
+  }
+  .tab-item .tab-set {
+    padding: 20px;
+  }
+  .time-line.past {
+    opacity: 0.5;
+}
+.time-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    z-index: 1000;
+}
+.time-line.current {
+    background-color: red;
+}
+.time-line.past {
+    background-color: blue;
+    opacity: 0.5;
+}
+.time-marker {
+    position: absolute;
+    left: -30px;
+    top: -9px;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+/*スマホ版.timetable.html------------*/
+@media(max-width:800px){
+    caption {
+        width: 200px;
+        font-size: 20px;
+    }
+    .tab-list li {
+        width: 100px;
+        font-size: 1.5rem;
+      }
+      .col2of4 {	
+        width: 180vw;
+    }
+    .tableBox th {
+        width: 80px;
+    }
+    .tableBox td {
+        width: 200px;
+        font-size: 1.2rem;
+}
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*drink.html*/
+.lunch-title img{
+    width: 500px;
+    margin:auto;
+    padding: 80px 0 0;
+}
+.drink-grid{
+    width: 380px;
+    margin: 5vh auto;
+    padding:10px;
+    background-color: #fff;
+}
+.drink-grid-last{
+   padding-bottom: 50px;
+   display: flex;
+   flex-wrap: wrap;
+}
+.boxJ{
+    font-size: 30px; 
+    border-left:10px solid #004aad;
+    line-height: 1;
+    margin: 30px 0 30px;
+    padding:0 10px;
+}
+.boxJ-span{
+    font-size: 1.8rem;
+}
+.boxJ-location{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.topic-maps {
+    position: relative;
+    background: #004aad;
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 90px;
+    margin: 5px;
+    transition: transform .5s ease;
+  }
+.topic-maps span{
+    position: absolute;
+    height: 2px;
+    background-color:#fff;
+    display: block;
+  }
+.topic-maps span:nth-child(1){left: 35%; width: 40%; top:18px;transform:rotate(-45deg);}
+.topic-maps span:nth-child(2){left: 35%; width: 40%;top: 11px;transform:rotate(45deg);}
+.topic-maps:hover {
+    transform: translateX(3px);
+  }
+  
+.boxK{
+    width:90%;
+    height: auto;
+    margin: auto;
+}
+.boxL{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.L-p{
+    font-size: 20px;
+    text-align: center;
+    color:#004aad;
+        background-image: repeating-linear-gradient(-45deg,
+        rgb(0, 74, 173,.3) 0, rgb(0, 74, 173,.3) 3px,
+            transparent 3px, transparent 6px);
+        background-repeat: no-repeat;
+}
+.boxL ul{
+    padding:0;
+}
+.boxL li {
+    list-style:none;
+   text-align: center;
+}
+.rubbish-img{
+    padding-bottom:100px ;
+    width: 90876%;
+    margin:auto;
+}
+
+/*スマホ版.drink----------------------*/
+@media(max-width:600px){
+    .lunch-title img{
+        width: 70%;
+        padding: 40px 0 0;
+    }
+    .drink-grid{
+        width: 85%;
+        padding: 10px;
+    }
+    .boxJ{
+        font-size: 2.7rem; 
+    }
+    .boxJ span{
+        font-size: 1.5rem;
+    }
+    
+    .boxK{
+        height: auto;
+    }
+    .boxL{
+      font-size: 1.5rem;
+    }
+    .L-p{
+        font-size: 2rem;
+    }
+}
