@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>QRコード決済ページ（チャージ時も許可確認）</title>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: "Noto Serif JP", serif; background: #f9f5f0; color: #4a3c31; text-align: center; }
+    .section { background: #fff8f0; border: 1.5px solid #d2691e; border-radius: 10px; box-shadow: 2px 2px 10px #d2691e22; padding: 24px 12px; margin: 32px auto; max-width: 420px; }
+    button { background: #b7410e; color: #fff; border: none; border-radius: 4px; padding: 10px 18px; font-weight: bold; margin: 5px; font-family: "Noto Serif JP", serif; }
+    button:hover { background: #8b2a0e; }
+    h2 { color: #b7410e; }
+    #balance { font-size: 1.2em; margin: 14px 0; border: 2px solid #d2691e; border-radius: 10px; padding: 10px 18px; background: #fff4e6; display: inline-block; }
+    #result { margin: 15px 0 0 0; font-weight: bold; color: #b7410e; min-height: 1.5em; }
+    #history-list {
+      text-align: left;
+      font-size: 0.98em;
+      margin-top: 10px;
+      color: #4a3c31;
+      background: #fffdf7;
+      border-radius: 6px;
+      padding: 10px 10px 10px 18px;
+      min-height: 1.5em;
+      max-height: 160px;
+      overflow-y: auto;
+      box-shadow: 0 0 4px #d2691e11;
+      border: 1px solid #e6c9a8;
+    }
+    #history-list li { margin-bottom: 3px; }
+    .link { margin-top: 20px; display: inline-block; }
+    .link a { color: #b7410e; text-decoration: underline; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h2>QRコード決済</h2>
+    <div id="balance">残高: <span id="amount">0</span> 円</div>
+    <h3 style="margin-top:18px;">取引履歴</h3>
+    <ul id="history-list"></ul>
+    <button id="camera-toggle">カメラON</button>
+    <div id="reader" style="width:300px; margin: 0 auto;"></div>
+    <div id="result"></div>
+    <div class="link">
+      <a href="count.html" target="_blank">▶ 全体集計ページを見る</a>
+    </div>
+  </div>
+  <script>
+    // 商品データベース
+    const products = [
+      { id: "A001", name: "りんご", price: 300 },
+      { id: "A002", name: "バナナ", price: 150 },
+      { id: "A003", name: "みかん", price: 200 },
+      { id: "A004", name: "大和茶", price: 400 },
+      { id: "A005", name: "鹿まんじゅう", price: 250 }
+    ];
+    // GASの公開URL（必要なら設定）
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbw3pySNr80TIckFAn0jDDXRop2si2ARqeNfV3tUap7SIqIltSWdu5n-k2XDU89oYUg/exec";
+    let userId = localStorage.getItem('userId');
+    if (!userId) {
+      userId = 'user_' + Math.random().toString(36).slice(2, 10);
+      localStorage.setItem('userId', userId);
+    }
+    let balance = 0;
+    let history = [];
+    function loadData() {
+      const savedBalance = localStorage.getItem('balance');
+      const savedHistory = localStorage.getItem('history');
+      if (savedBalance !== null) balance = Number(savedBalance);
+      if (savedHistory !== null) history = JSON.parse(savedHistory);
+    }
+    function saveData() {
+      localStorage.setItem('balance', balance);
+      localStorage.setItem('history', JSON.stringify(history));
+    }
+    function updateBalanceDisplay() {
+      document.getElementById('amount').textContent = balance;
+      renderHistory();
+    }
+    function renderHistory() {
+      const ul = document.getElementById('history-list');
+      ul.innerHTML = "";
+      if (history.length === 0) {
+        ul.innerHTML = "<li>履歴はありません</li>";
+        return;
+      }
+      history.slice().reverse().forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        ul.appendChild(li);
+      });
+    }
+    // GASに購入データを送信（必要なら実装）
+    function sendPurchaseToServer(product) {
+      fetch('https://script.google.com/macros/s/AKfycbw3pySNr80TIckFAn0jDDXRop2si2ARqeNfV3tUap7SIqIltSWdu5n-k2XDU89oYUg/exec',{
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: userId,
+          productId: product.id,
+          productName: product.name,
+          price: product.price,
+          date: new Date().toISOString()
+        })
+      });
+    }
+
+    // QRコード読み取り処理
+    function onScanSuccess(decodedText, decodedResult) {
+      if (decodedText.startsWith("PRODUCT:")) {
+        const productId = decodedText.replace("PRODUCT:", "");
+        const product = products.find(p => p.id === productId);
+        if (product) {
+          if (balance >= product.price) {
+            const confirmMsg = `${product.name} を ${product.price}円で購入します。\n残高から引き落としますか？`;
+            if (confirm(confirmMsg)) {
+              balance -= product.price;
+              const now = new Date();
+              history.push(`${now.toLocaleString()}：${product.name} 購入 -${product.price}円`);
+              updateBalanceDisplay();
+              saveData();
+              sendPurchaseToServer(product); // 必要ならGASへ送信
+              document.getElementById('result').textContent =
+                `${product.name} を購入しました。${product.price}円引き落としました。`;
+            } else {
+              document.getElementById('result').textContent = "支払いをキャンセルしました。";
+            }
+          } else {
+            document.getElementById('result').textContent = `残高不足です。`;
+          }
+        } else {
+          document.getElementById('result').textContent = `商品が見つかりません（ID: ${productId}）。`;
+        }
+      } else if (decodedText.startsWith("CHARGE:")) {
+        const charge = parseInt(decodedText.replace("CHARGE:", ""), 10);
+        if (!isNaN(charge) && charge > 0) {
+          // チャージ内容の確認
+          const confirmMsg = `${charge}円をチャージします。\n残高に加算しますか？`;
+          if (confirm(confirmMsg)) {
+            balance += charge;
+            const now = new Date();
+            history.push(`${now.toLocaleString()}：チャージ +${charge}円`);
+            updateBalanceDisplay();
+            saveData();
+            document.getElementById('result').textContent = `チャージしました：+${charge}円`;
+          } else {
+            document.getElementById('result').textContent = "チャージをキャンセルしました。";
+          }
+        } else {
+          document.getElementById('result').textContent = `チャージ金額が不正です。`;
+        }
+      } else {
+        document.getElementById('result').textContent = `不明なQRコードです。`;
+      }
+    }
+    function onScanError(errorMessage) {}
+    // カメラのオンオフ
+    let html5QrCode = null;
+    let isCameraOn = false;
+    document.getElementById('camera-toggle').onclick = async function() {
+      const btn = this;
+      if (!isCameraOn) {
+        html5QrCode = new Html5Qrcode("reader");
+        await html5QrCode.start(
+          { facingMode: "environment" },
+          { fps: 10, qrbox: 250 },
+          onScanSuccess,
+          onScanError
+        );
+        btn.textContent = "カメラOFF";
+        isCameraOn = true;
+      } else {
+        await html5QrCode.stop();
+        html5QrCode.clear();
+        btn.textContent = "カメラON";
+        isCameraOn = false;
+      }
+    };
+    loadData();
+    updateBalanceDisplay();
+  </script>
+</body>
+</html>
