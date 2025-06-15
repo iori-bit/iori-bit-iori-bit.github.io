@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.store-title img{
+    width: 60%;
+    margin: auto;
+    padding: 40px 0 0;
+}
+.offcial-top-p{
+    text-align: center;
+    font-size: 2rem;
+}
+.offcial-date-p{
+    text-align: center;
+    font-size: 3rem;
+}
+/*スマホ版.official----------------------*/
+@media(max-width:600px){
+    .store-title img{
+        width: 80%;
+    }
+    .offcial-top-p{
+        font-size: 1.2rem;
+    }
+    .offcial-date-p{
+        font-size: 2rem;
+    }
+}

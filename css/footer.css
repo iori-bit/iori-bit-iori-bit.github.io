@@ -1,0 +1,49 @@
+@charset "UTF-8";
+footer{
+    background:url(../img/background/white-background.png);
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    font-family: serif;
+    }
+footer p{
+    font-size: 1.5rem;
+    color:#444343;
+}
+.emblem{
+    margin: auto;
+    width:180px;
+}
+.roboken-emblem{
+    margin:auto;
+    width:120px;
+}
+.footer-text-15px{
+    margin-top: 30px;
+    font-size:1.5rem;
+    letter-spacing: 10px;
+}
+
+.footer-text-30px{
+    font-size: 30px;
+    letter-spacing: 2rem;
+    margin-bottom: 30px;
+}
+/*スマホ版.footer------------*/
+@media(max-width:500px){
+    .emblem{ 
+        width:130px;
+    }
+    .roboken-emblem{
+        width:90px;
+    }
+    .footer-text-15px{
+        font-size: 1rem;
+        letter-spacing: 7px;
+    }
+    .footer-text-30px{
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+    .roboken-p{font-size: 12px;}
+}

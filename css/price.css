@@ -1,0 +1,89 @@
+@charset "UTF-8";
+.price-list{
+    margin:10vh 0;
+    position: relative;
+}
+.price-list h3{
+    text-align: center;
+    font-size: 2rem;
+}
+.empty{
+    position: absolute;
+    top: 50%;
+}
+.show{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse:collapse;
+    }
+    .price-li-1{
+        color: #fff;
+        border:1px solid #294e7e;
+        width: 30vw;
+        padding: 5px;
+        background-color: #004aad;
+        font-size: 1.5rem;
+    }
+    .price-li-2{
+        border:1px solid #294e7e;
+        width: 30vw;
+        padding: 5px;
+        background-color: #fff;
+        font-size: 1.5rem;
+    }
+    .price-li-3{
+        color: #fff;
+        border:1px solid #294e7e;
+        width: 25vw;
+        padding: 5px;
+        background-color:#004aad;
+        font-size: 1.5rem;
+    }
+    .price-li-4{
+        border:1px solid #294e7e;
+        width: 25vw;
+        padding: 5px;
+        background-color: #fff;
+        font-size: 1.5rem;
+    }
+    .price-li-5{
+        color: #fff;
+        border:1px solid #294e7e;
+        width: 10vw;
+        padding: 5px;
+        background-color: #004aad;
+        font-size: 1.5rem;
+    }
+    .price-li-6{
+        border:1px solid #294e7e;
+        width: 10vw;
+        padding: 5px;
+        background-color: #fff;
+        font-size: 1.5rem;
+    }
+    /*スマホ版.price------------------------------*/
+    @media(max-width:800px){
+        .show{
+            font-size: 12px;
+            }
+        .price-li-1{
+            width: 42.5vw;
+        }
+        .price-li-2{
+            width: 42.5vw;
+        }
+        .price-li-3{
+            width: 32.5vw;
+        }
+        .price-li-4{
+            width: 32.5vw;
+        }
+        .price-li-5{
+            width:20vw;
+        }
+        .price-li-6{
+            width:20vw;
+        }
+    }

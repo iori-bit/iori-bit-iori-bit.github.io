@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.lostitem-first{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+@media(max-width:600px){
+    .lostitem-first{
+        font-size: 1rem;
+    }
+}
