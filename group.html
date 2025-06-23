@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青丹祭「天体」-奈良高校文化祭2025</title>
+    <meta name="description" content="奈良高校の文化祭、通称「青丹祭」の公式ホームページです。2025年度は9月5日と6日を予定しています!一般公開は7日のみです。是非お越しください!">
+    <link rel="icon" href="img/nara-favicon.ico">
+    <!--css-->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/group.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div id="navArea">
+        <nav class="inner">
+          <div class="nav-img">
+            <img src="img/nav-menu/nav-menu-top2.png" alt="">
+          </div>
+          <ul>
+            <li><a href="index.html"><div class="inner-text-25px">トップ</div></a></li>
+            <li><a href="group.html"><div class="inner-text-25px inner-text-active">団体一覧</div></a></li>
+            <li><a href="timetable.html"><div class="inner-text-25px">タイムテーブル</div></a></li>
+            <li><a href="maps.html"><div class="inner-text-25px">校内図</div></a></li>
+            <li><a href="price.html"><div class="inner-text-25px">料金表＆在庫状況</div></a></li>
+            <li><a href="closingparty.html"><div class="inner-text-25px">後夜祭</div></a></li>
+            <li><a href="lostitem.html"><div class="inner-text-25px">落とし物</div></a></li>
+        </ul>
+        </nav>
+        <div class="toggle-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="mask"></div>
+      </div>
+    </header> 
+    <div class="whole-border3">
+      <div class="top-bird">
+        <img class="bird1" src="img/background/bird-background.png" alt="">
+        <img class="bird2" src="img/background/bird-background.png" alt="">
+      </div>
+    <div class="whole-border2">
+      <div class="whole-border">
+        <img class="title2-img" src="img/nav-menu/nav-menu-top2.png" alt="">
+        <div class="title">
+          <img src="img/background/group-top-background.png" alt="">
+          <p class="title-p">団体紹介</p>
+        </div>
+        <P class="rain_situation">☆がついている団体は雨天中止です。</P>
+        <div class="search-container">
+          <img src="img/other/sarch.png" alt="" class="search-icon">
+          <input type="text" id="search-box" placeholder="検索キーワードを入力">
+        </div>
+        <div style="display: flex;justify-content: space-around;">
+          <div class="i-btn">
+            <li><a href="" class="group-active all" data-filter="all">全て</a></li>
+            <li><a href="" class="class" data-filter="class-list">クラス</a></li>
+            <li><a href="" class="simulation" data-filter="simulation-list">部模擬</a></li>
+            <li><a href="" class="exhibition" data-filter="exhibition-list">部展示</a></li>
+            <li><a href="" class="stage" data-filter="stage-list">舞台発表</a></li>
+            <li><a href="" class="favorite" data-filter="favorite-list">お気に入り</a></li>
+          </div>
+        </div>    
+        <ul id="items" class="i-list">
+          <li class="class-list" data-category="class-list">
+           <div class="i-list-top"><img src="img/other/Class.png" alt=""></div>
+            <div class="i-list-flex">
+              <div class="accordion-container">
+                <dl data-item-id="1" class="accordion-list item  list-item" data-yomi="F-1">
+                  <dt class="accordion-title js-accordion-title list-question ">
+                    <img src="img/groups/f1.png" alt=""class="boxG">
+                    <div class="boxH" style="background-color: #008000;">体育館</div>
+                    <div class="boxI">F-1</div>     
+                    <div class="product__fav-item">
+                      <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                      </button>
+                    </div>                                           
+                  </dt>
+                  <dd class="accordion-text list-answer">
+                    <div class="hidden-text">1-1、1年1組</div>
+                    <p>●7日(土)9:26~<br>こんにちは!F1 です！<br>私たちは、「桃太郎-現代風-」の劇を行います。<br>見にきてくれたらうれしいです！<br>また、通用門の装飾も F1 が担当しています！</p>
+                    <div style="display: flex;gap: 5%;">
+                      <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                      <a href="timetable.html?day=2&highlight=F1" class="timetable-btn">タイムテーブル</a>
+                    </div>
+                  </dd>
+                </dl>
+                <dl data-item-id="2"   class="accordion-list item list-item" data-yomi="F-2">
+                  <dt class="accordion-title js-accordion-title list-question ">
+                    <img src="img/groups/f2.png" alt="" class="boxG">
+                    <div class="boxH" style="background-color: #008000;">体育館</div>
+                    <div class="boxI">F-2</div>
+                    <div class="product__fav-item">
+                      <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                      </button>
+                    </div>   
+                  </dt>
+                  <dd class="accordion-text list-answer">
+                    <div class="hidden-text">1-2,1年2組</div>
+                    <p>●7日(土)9:02~<br>こんにちは!F2です!私達は垂幕を担当しました。皆でわいわい楽しく製作したので必ず見てください!!舞台発表はなんと『オタ芸』！？いつも優しく穏やかなクラスメイトのギャップに惚れちゃうかも！ぜひ推しを見つけに訪れてみてね♡</p>
+                    <div style="display: flex;gap: 5%;">
+                      <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                      <a href="timetable.html?day=2&highlight=F2" class="timetable-btn">タイムテーブル</a>
+                    </div>
+                  </dd>
+                </dl>
+                <dl data-item-id="3" class="accordion-list item list-item" data-yomi="F-3">
+                  <dt class="accordion-title js-accordion-title list-question ">
+                    <img src="img/groups/f3.png" alt="" class="boxG">
+                    <div class="boxH" style="background-color: #008000;">体育館</div>
+                    <div class="boxI">F-3</div>
+                    <div class="product__fav-item">
+                      <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                      </button>
+                    </div>   
+                  </dt>
+                  <dd class="accordion-text list-answer">
+                    <div class="hidden-text">1-3,1年3組</div>
+                    <p>●7日(土)9:14~<br>私たち F3 は、男女一緒にダンスをします！最近の曲から昔の曲まであるので、ぜひ楽しんでいって下さい！<br>一緒に踊ってこの青丹祭を盛り上げましょう！！</p>
+                    <div style="display: flex;gap: 5%;">
+                      <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                      <a href="timetable.html?day=2&highlight=F3" class="timetable-btn">タイムテーブル</a>
+                    </div>
+                  </dd>
+                </dl>
+                <dl data-item-id="4" class="accordion-list item list-item" data-yomi="F-4">
+                  <dt class="accordion-title js-accordion-title list-question ">
+                    <img src="img/groups/f4.png" alt=""class="boxG">
+                    <div class="boxH" style="background-color: #008000;">体育館</div>
+                    <div class="boxI">F-4</div>
+                    <div class="product__fav-item">
+                      <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                      </button>
+                    </div>
+                  </dt>
+                  <dd class="accordion-text list-answer">
+                    <div class="hidden-text">1-4,1年4組</div>
+                    <p>●7日(土)10:02~<br>F4 の舞台発表は「童話ごちゃ混ぜ集」です！<br>みんなが知っている数々の童話が1つになります！<br>F4 の個性が出たすばらしい作品になっています！<br>奈高一の劇をおとどけするのでお楽しみに！！！</p>
+                    <div style="display: flex;gap: 5%;">
+                      <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                      <a href="timetable.html?day=2&highlight=F4" class="timetable-btn">タイムテーブル</a>
+                    </dd>
+                  </dl>
+                  <dl data-item-id="5"  class="accordion-list item list-item" data-yomi="F-5">
+                    <dt class="accordion-title js-accordion-title list-question ">
+                      <img src="img/groups/f5.png" alt="" class="boxG">
+                      <div class="boxH" style="background-color: #008000;">体育館</div>
+                      <div class="boxI">F-5</div>
+                      <div class="product__fav-item">
+                        <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                        </button>
+                      </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">1-5,1年5組</div>
+                      <p>●7日(土)9:38~<br>私たち F5 は、「アラジン」の劇をします。ダンスあり、歌ありで、最高にハッピーな「アラジン」に仕上がりました。また、装飾、劇のデザインにも力を入れました。クラス一丸となって頑張るので是非見に来て下さい。</p>
+                      <div style="display: flex;gap: 5%;">
+                        <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                        <a href="timetable.html?day=2&highlight=F5" class="timetable-btn">タイムテーブル</a>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl data-item-id="6"  class="accordion-list item list-item" data-yomi="F-6">
+                    <dt class="accordion-title js-accordion-title list-question ">
+                      <img src="img/groups/f6.png" alt=""  class="boxG">
+                      <div class="boxH" style="background-color: #008000;">体育館</div>
+                      <div class="boxI">F-6</div>
+                      <div class="product__fav-item">
+                        <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                        </button>
+                      </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">f6、1-6,1年6組</div>
+                      <p>●7日(土)9:50~<br>今回、1 年 6 組は「マリオ」をテーマに舞台発表をします。どのような発表になるのか、皆さん予想はつきますでしょうか。そして体育館前のフォトスポットも私たちのクラスが担当します。ぜひ足を運んでみてください。</p>
+                      <div style="display: flex;gap: 5%;">
+                        <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                        <a href="timetable.html?day=2&highlight=F6" class="timetable-btn">タイムテーブル</a>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl data-item-id="7"  class="accordion-list item list-item" data-yomi="F-7">
+                    <dt class="accordion-title js-accordion-title list-question ">
+                      <img src="img/groups/f7.png" alt="" class="boxG">
+                      <div class="boxH" style="background-color: #008000;">体育館</div>
+                      <div class="boxI">F-7</div>
+                      <div class="product__fav-item">
+                        <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                        </button>
+                      </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">f7、1-7,1年7組</div>
+                      <p>●7日(土)8:50~<br>こんにちは!F7 は「天空の城ラピュタ」の劇を行います。<br>ぜひご覧下さい!F7 の劇と装飾を観ずにどこへ行こうというのかね！？装飾場所は「体育館正面入り口と通路」です。「青春」というテーマを F7 らしく表現しました！！</p>
+                      <div style="display: flex;gap: 5%;">
+                        <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                        <a href="timetable.html?day=2&highlight=F7" class="timetable-btn">タイムテーブル</a>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl data-item-id="8"  class="accordion-list item list-item" data-yomi="F-8">
+                    <dt class="accordion-title js-accordion-title list-question ">
+                      <img src="img/groups/f8.png" alt=""class="boxG">
+                      <div class="boxH" style="background-color: #008000;">体育館</div>
+                      <div class="boxI">F-8</div>
+                      <div class="product__fav-item">
+                        <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                        </button>
+                      </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">f8、1-8,1年8組</div>
+                      <p>●7日(土)10:14~<br>こんにちは!F8 です！私たちは体育館内をキラキラな青春をイメージして装飾します。舞台発表では「ロミオとジュリエット」をします。様々なおもしろポイントがあるので、ぜひ注目して見てください！</p>
+                      <div style="display: flex;gap: 5%;">
+                        <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                        <a href="timetable.html?day=2&highlight=F8" class="timetable-btn">タイムテーブル</a>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl data-item-id="9"  class="accordion-list item list-item" data-yomi="F-9">
+                    <dt class="accordion-title js-accordion-title list-question ">
+                      <img src="img/groups/f9.png" alt="" class="boxG">
+                      <div class="boxH" style="background-color: #008000;">体育館</div>
+                      <div class="boxI">F-9</div>
+                      <div class="product__fav-item">
+                        <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                        </button>
+                      </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">f9、1-9,1年9組</div>
+                      <p>●7日(土)10:26~<br>みなさんこんにちは、F9です!!ところでみなさん、『アナと雪の女王』を知っていますか？私たち F9 は、アナ雪をミュージカル風におもしろくお届けします♪是非、見に来てくださいね？</p>
+                      <div style="display: flex;gap: 5%;">
+                        <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                        <a href="timetable.html?day=2&highlight=F9" class="timetable-btn">タイムテーブル</a>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl data-item-id="10" class="accordion-list item list-item" data-yomi="J-1">
+                    <dt class="accordion-title js-accordion-title list-question ">
+                      <img src="img/groups/j1.png" alt=""class="boxG">
+                      <div class="boxH" style="background-color: #ed1c24;">北館2階</div>
+                      <div class="boxI">J-1</div>
+                      <div class="product__fav-item">
+                        <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                        </button>
+                      </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">j1、2-1,2年1組</div>
+                      <p>奈高の伝統になっているフィーリングカップルを今年もJ1 が担当します！！ドキドキ・ワクワクのフィーリングカップルであなたも運命の人に出会えるかも…！？新しくカップルが誕生する瞬間をぜひ見に来てください！</p>
+                      <a href="maps.html?area=J1#campus-map-2" class="area-link map-btn">マップ</a>  
+                    </dd>
+                  </dl>
+                  <dl data-item-id="11" class="accordion-list item list-item" data-yomi="J-2">
+                    <dt class="accordion-title js-accordion-title list-question ">
+                      <img src="img/groups/j2.png" alt="" class="boxG">
+                      <div class="boxH" style="background-color: #ed1c24;">北館3階</div>
+                      <div class="boxI">J-2</div>
+                      <div class="product__fav-item">
+                        <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                        </button>
+                      </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">j2、2-2,2年2組</div>
+                      <p>ある日登校すると、教室になにやら怪しいものが。どうやら爆弾らしい。チクタクチクタク...、時を刻む音がする。果たして爆弾を止め無事に普段の学校生活を取り戻すことができるのか。</p>
+                      <a href="maps.html?area=J-2#campus-map-3" class="area-link map-btn">マップ</a>
+                    </dl>
+                    <dl data-item-id="12" class="accordion-list item list-item" data-yomi="J-3">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/j3.png" alt="" class="boxG">
+                        <div class="boxH" style="background-color: #ed1c24;">北館3階</div>
+                        <div class="boxI">J-3</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                        <div class="hidden-text">j3、2-3,2年3組</div>
+                        <p>こんにちは J3 です！あの懐かしの某番組のキッキングスナイパーをします！あなたも VS颪（おろし）の世界を体験してみませんか？J3 でまってます！</p>
+                        <a href="maps.html?area=J-3#campus-map-3" class="area-link map-btn">マップ</a>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="13"   class="accordion-list item list-item" data-yomi="J-4">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/j4.png" alt="" class="boxG">
+                        <div class="boxH" style="background-color: #ed1c24;">北館3階</div>
+                        <div class="boxI">J-4</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                        <div class="hidden-text">j4、2-4,2年4組</div>
+                        <p>「この学校で1番賢いのは誰だ」もうすぐ終了する某クイズ番組の記念に挑んでみては？スコアボードの頂点に立ち、2024 年度「奈高王」になろう！</p>
+                        <a href="maps.html?area=J-4#campus-map-3" class="area-link map-btn">マップ</a>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="14" class="accordion-list item list-item" data-yomi="J-5" >
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/j5.png" alt=""  class="boxG">
+                        <div class="boxH" style="background-color: #ed1c24;">北館3階</div>
+                        <div class="boxI">J-5</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                        <div class="hidden-text">j5、2-5,2年5組</div>
+                        <p>J5 です！一から作った UFO キャッチャーでみんなを楽しませます。景品はお楽しみ。ぜひ挑戦してみては...？！さらにフォトスポットでは Niceな写真が撮れちゃうかも...お楽しみに！！</p>
+                        <a href="maps.html?area=J-5#campus-map-3" class="area-link map-btn">マップ</a>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="accordion-container">
+                    <dl data-item-id="15"  class="accordion-list item list-item" data-yomi="J-6">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/j6.png" alt=""  class="boxG">
+                        <div class="boxH" style="background-color: #faa61a;">南館3階</div>
+                        <div class="boxI">J-6</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                        <div class="hidden-text">j6、2-6,2年6組</div>
+                        <p>今世界最恐のお化け屋敷。あなたは耐えられるか。J6 の生徒が全身全霊をかけて完成させたお化け屋敷へ招待します。思わず目を閉じたくなるような恐怖があなたを待っています。出口まで無事にたどりつけるよう願っております....^^</p>
+                        <a href="maps.html?area=J-6#campus-map-3" class="area-link map-btn">マップ</a>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="16" class="accordion-list item list-item" data-yomi="J-7">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/j7.png" alt=""class="boxG">
+                        <div class="boxH" style="background-color: #faa61a;">南館3階</div>
+                        <div class="boxI">J-7</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">j7、2-7,2年7組</div>
+                        <p>我々J7 はボウリングを行います！なじみのあるゲームで、気になるあの子と、ライバルのあの子と競い合って、心ゆくまで楽しんでください。是非お越し下さい。</p>
+                        <a href="maps.html?area=J-7#campus-map-3" class="area-link map-btn">マップ</a>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="17"   class="accordion-list item list-item" data-yomi="J-8">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/j8.png" alt="" class="boxG">
+                        <div class="boxH" style="background-color: #faa61a;">南館3階</div>
+                        <div class="boxI">J-8</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">j8、2-8,2年8組</div>
+                        <p>「Forest Flyer」へようこそ!<br>森の中を駆け抜けるバーチャルジェットコースターは 360 度の視覚効果でまるで本物のジェットコースターに乗っているかのような興奮を味わえます！<br>さあ、あなたもこの未体験の世界へ飛び込もう！</p>
+                        <a href="maps.html?area=J-8#campus-map-3" class="area-link map-btn">マップ</a>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="18"   class="accordion-list item list-item" data-yomi="J-9">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/j9.png" alt="" class="boxG">
+                        <div class="boxH" style="background-color: #faa61a;">南館3階</div>
+                        <div class="boxI">J-9</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">j9、2-9,2年9組</div>
+                        <p>いろんな思いを木馬に乗せて J9 のメリーゴーランドで回ってみませんか？きっと子供の頃の思い出を蘇らせながら乗る人もいるでしょう。回転する木馬に趣を感じる文系の人や、自身にかかる遠心力 F=mrω²を体感する理系の人もいるかもしれません。J9 のスペシャリストたちが力を合わせ、作り上げた最高傑作をぜひ体験してください。本日はいつもより多く回っております!Merry go round!!(楽しく回ろう！！)</p>
+                        <a href="maps.html?area=J-9#campus-map-3" class="area-link map-btn">マップ</a>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="19"  class="accordion-list item list-item" data-yomi="S-1">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/s1.png" alt="" class="boxG">
+                        <div class="boxH" style="background-color: #37ba90;">新館前</div>
+                        <div class="boxI">S-1</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">s1、3-1,3年1組</div>
+                        <p>パリッとえびせんにたまごのせ!<br>S1 たません、ぜひ来てねー！</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="price.html#s1" class="detail-btn">料金&在庫</a>
+                          <a href="maps.html?area=japanese-archery1#campus-map-out" class="area-link map-btn">マップ</a>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="20" class="accordion-list item list-item" data-yomi="S-2">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                      <img src="img/groups/s2.png" alt="" class="boxG">
+                      <div class="boxH" style="background-color: #37ba90;">西側駐車場</div>
+                      <div class="boxI">S-2</div>
+                      <div class="product__fav-item">
+                        <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                        </button>
+                      </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">s2、3-2,3年2組</div>
+                      <p>今年の S2 は一味違う！？<br>私たちが修業に修業を重ね作りあげたこの餃子！<br>ノーマル・キムチ・ハムチーズの 3 種類をご用意しました！<br>青丹祭、S2 の餃子食べたもん勝ち!!!</p>
+                      <div style="display: flex;gap: 5%;">
+                        <a href="price.html#s2" class="detail-btn">料金&在庫</a>
+                        <a href="maps.html?area=S-7#campus-map-out" class="area-link map-btn">マップ</a>
+                      </div>
+                    </dd>
+                  </dl>
+                  <dl data-item-id="21" class="accordion-list item list-item" data-yomi="S-3">
+                  <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/s3.png" alt="" class="boxG">
+                <div class="boxH" style="background-color:  #37ba90;">新館前</div>
+                <div class="boxI">S-3</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">s3、3-3,3年3組</div>
+                      <p>暑さの残る長月にこそ、食べてほしいのが此のかき氷。一口喰えば暑さを忘れ、二口喰えば疲れを忘れ、三口喰えば憂いを忘れる。腹は満たさずとも心を満たすかき氷でございます。さて いくら語っても食えぬ氷では頭も冷えぬ。まずは一口ご賞味あれ。</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="price.html#s3" class="detail-btn">料金&在庫</a>
+                          <a href="maps.html?area=S-3#campus-map-out" class="area-link map-btn">マップ</a>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="22"   class="accordion-list item list-item" data-yomi="S-4">
+                    <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/s4.png" alt="" class="boxG">
+                <div class="boxH" style="background-color:  #37ba90;">西側駐車場</div>
+                <div class="boxI">S-4</div>
+                <div class="product__fav-item">
+                <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">s4、3-4,3年4組</div>
+                        <p>はい、わっさーこんにちは S4 です。<br>今回はですね、フルーツゲームをやっていこうと思います。<br>「ちょ待ってこれ美味すぎだろ」<br>「チャンネル登録とフルーツ飴の購入お願いします。」</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="price.html#s4" class="detail-btn">料金&在庫</a>
+                          <a href="maps.html?area=S-4#campus-map-out" class="area-link map-btn">マップ</a>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="23"  class="accordion-list item list-item" data-yomi="S-5">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/s5.png" alt=""  class="boxG">
+                        <div class="boxH" style="background-color:  #37ba90;">新館前</div>
+                        <div class="boxI">S-5</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">s5、3-5,3年5組</div>
+                        <p>ピザを食べた経験がない人、俺本当に注意した方がいいと思う。最後にピザ食べたのいつ？3年5組のピザ買わないのやばいって。これよりうまいピザ他にないって。</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="price.html#s5" class="detail-btn">料金&在庫</a>
+                          <a href="maps.html?area=kendo#campus-map-out" class="area-link map-btn">マップ</a>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="24"  class="accordion-list item list-item" data-yomi="S-6">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/s6.png" alt=""  class="boxG">
+                        <div class="boxH" style="background-color: #37ba90;">新館前</div>
+                        <div class="boxI">S-6</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                    </dt>
+                     <dd class="accordion-text list-answer">
+                      <div class="hidden-text">s6、3-6,3年6組</div>
+                        <p>S6 はチュロス売ります！！ディ〇ニーやユ〇バのよりおいしくてあまくてかわいいチュロスですので、ぜひきてくださーい！！！</p>
+                        <div style="display: flex;gap: 5%;"><a href="price.html#s6" class="detail-btn">料金&在庫</a>
+                          <a href="maps.html?area=cook#campus-map-out" class="area-link map-btn">マップ</a>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="25"class="accordion-list item list-item" data-yomi="S-7">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/s7.png" alt=""  class="boxG">
+                        <div class="boxH" style="background-color: #37ba90;">西側駐車場</div>
+                        <div class="boxI">S-7</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">s7、3-7,3年7組</div>
+                        <p>「ばだっばっばっばー」<br>コマーシャルでおなじみの歌だね。歌ってみたら気分はすっかり S7 ルド！お店に並ぶときや食べる前に歌っちゃおう♪</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="price.html#s7" class="detail-btn">料金&在庫</a> 
+                          <a href="maps.html?area=S-7#campus-map-out" class="area-link map-btn">マップ</a>
+                        </div>
+                      </dd>
+                    </dl>
+              
+                    <dl data-item-id="26" class="accordion-list item list-item" data-yomi="S-8">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/s8.png" alt=""  class="boxG">
+                <div class="boxH" style="background-color: #37ba90;">西側駐車場</div>
+                <div class="boxI">S-8</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">s8、3-8,3年8組</div>
+                      <p>私たち S-8 はアイスワッフルを販売します。ほのかな甘みのあるワッフルに、ひんやりとしたアイスをのせ、みんなで厳選したお菓子をトッピングしました。写真映え間違いなし！ぜひ食べに来てください！</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="price.html#s8" class="detail-btn">料金&在庫</a> 
+                          <a href="maps.html?area=S-4#campus-map-out" class="area-link map-btn">マップ</a>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="27" class="accordion-list item list-item" data-yomi="S-9">
+                    <dt class="accordion-title js-accordion-title list-question">
+                <img src="img/groups/s9.png" alt="" class="boxG">
+                <div class="boxH" style="background-color:  #37ba90;">新館前</div>
+                <div class="boxI">S-9</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <div class="hidden-text">s9、3-9,3年9組</div>
+                      <p>お待たせ致しました！！ <br>ここまでいち組から順についに最後！！ <br>9 組のしょうかいです！！ <br> 9 組はアイスの天ぷらを販売します！！<br>よければ買ってください！！</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="price.html#s9" class="detail-btn">料金&在庫</a>
+                          <a href="maps.html?area=S-3#campus-map-out" class="area-link map-btn">マップ</a>
+                        </div>
+                      </dd>
+                    </dl>
+              </div>
+              </div>
+              </li>
+              <li class="simulation-list" data-category="simulation-list">
+                <div class="i-list-top"><img src="img/other/Club booth.png" alt=""></div>
+                  <div class="i-list-flex">
+                  <div class="accordion-container"> 
+                    <dl data-item-id="28" class="accordion-list item list-item" data-yomi="basketball">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club1.png" alt="" width="50" height="50" class="boxG">
+                          <div class="boxH" style="background-color: #598585;">駐車場</div>
+                          <div class="boxI">バスケットボール部</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                       </dt>
+                       <dd class="accordion-text list-answer">
+                          <p>バスケ部の部模擬はシューティングゲームです。シュートを3回打って、入れば入るほど賞金のランクがup。良い賞金をgetしよう! !<br>Let's shooting♪<br>ぜひ、来てください！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#basketball" class="detail-btn">料金</a>
+                            <a href="maps.html?area=swimming#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                       </dl>
+                       <dl data-item-id="29"  class="accordion-list item list-item" data-yomi="handball">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club2.png" alt="" width="50" height="50" class="boxG">
+                          <div class="boxH" style="background-color:#598585;">駐車場</div>
+                          <div class="boxI">ハンドボール部☆</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                       </dt>
+                       <dd class="accordion-text list-answer">
+                          <p>僕たちハンドボール部はグランドでストラックアウトをしています。<br>的を狙って、全力でボールを投げてください！！手軽にできるので、何度も挑戦してください。良い成績を残すと景品があるかも…</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#handball" class="detail-btn">料金</a>
+                            <a href="maps.html?area=handball#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                       </dl>
+                       <dl data-item-id="30"  class="accordion-list item list-item" data-yomi="tennis">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club3.png" alt="" width="50" height="50" class="boxG">
+                          <div class="boxH" style="background-color: #598585;">駐車場</div>
+                          <div class="boxI">硬式テニス部☆</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>今年もやります、ヨーヨー釣り! <br>年齢問わず楽しめるので、ぜひぜひ硬式テニス部のヨーヨー釣りに遊びに来てください!! <br>駐車場で待ってます♪<br>※釣れなくても1つ持って帰ることができます。</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#tennis" class="detail-btn">料金</a>
+                            <a href="maps.html?area=tennis#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl> 
+                      <dl data-item-id="31" class="accordion-list item list-item" data-yomi="swimming">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club4.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #598585;">駐車場</div>
+                          <div class="boxI">水泳競技部</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>Water Ball!!ボールたちの巣くうミニプールからあなたの手で救いだせ！ボールをすくってすくってすくいまくれ！<br>青丹祭といえばこれ！<br>暑い夏を吹き飛ばせ！<br>ミニプール冷えてます!</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#swimming" class="detail-btn">料金</a>
+                            <a href="maps.html?area=swimming#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="32"  class="accordion-list item list-item" data-yomi="table-tennis">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club5.png" alt="" width="50" height="50" class="boxG">
+                          <div class="boxH" style="background-color: #598585;">駐車場</div>
+                          <div class="boxI">卓球部</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>今年も卓球部は玉入れピンポンをします！<br>点数が書かれた箱にビンポン玉を入れます。<br> 遊びに来てくれた人みんなに景品を用意しています！<br>豪華景品もあるかも…？高得点目指して頑張ってください！グラウンドで待ってます！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#table-tennis" class="detail-btn">料金</a>
+                            <a href="maps.html?area=handball#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="33"  class="accordion-list item list-item" data-yomi="t-and-f">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club6.png" alt="" width="50" height="50" class="boxG">
+                          <div class="boxH" style="background-color: #598585;">駐車場</div>
+                          <div class="boxI">陸上競技部</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>諸君らは毎日勉強もせず、SNSで1時間、2時間と時を無駄にし、気づけば一日が終わるという無駄時間をたくさん送ってきた全国の選りすぐりである。<br> そんな諸君らには正確に時をはかれるのかチャレンジしてもらおう！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#t-and-f" class="detail-btn">料金</a>
+                            <a href="maps.html?area=tennis#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="34" class="accordion-list item list-item" data-yomi="baseball">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club7.png" alt="" width="50" height="50" class="boxG">
+                          <div class="boxH" style="background-color: #a52a2a">グラウンド</div>
+                          <div class="boxI">野球部☆</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>野球部では今年もバッティングセンターを行います。場所は校舎側のグラウンドです。マシンが投げる球を打ち返し、豪華景品を手に入れよう！！もちろん初心者でも大歓迎！！野球を思う存分楽しもう！！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#baseball" class="detail-btn">料金</a>
+                            <a href="maps.html?area=baseball#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="35"  class="accordion-list item list-item" data-yomi="japanese-archery1">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club9.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #4c4b4b;">弓道場</div>
+                          <div class="boxI">弓道部(1)</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>今年もやります！弓道体験！！みなさんは弓道アニメ「ツルネ」は見ていましたか？<br>本物の弓矢を使って誰でも気軽にツルネ気分を味わうことが出来ます！個性豊かな弓道部員が袴を着て待っています！ぜひ来て下さい！！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#japanese-archery" class="detail-btn">料金</a>
+                          <a href="maps.html?area=japanese-archery2#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="36"  class="accordion-list item list-item" data-yomi="japanese-archery2">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club10.png" alt="" width="50" height="50" class="boxG">
+                          <div class="boxH" style="background-color: #4c4b4b;">弓道場</div>
+                          <div class="boxI">弓道部(2)</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>まだまだ暑い9月!沢山笑って喋って歌って動いて喉が水分を欲している頃かと思います!そんな時は!！弓道部でジュースを買いましょう！沢山の種類のジュースを用意して待っています！ぜひ来てください！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#japanese-archery" class="detail-btn">料金</a>
+                            <a href="maps.html?area=japanese-archery1#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="37" class="accordion-list item list-item" data-yomi="archery">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club8.png" alt="" class="boxG">
+                          <div class="boxH" style="background-color:#37ba90;">武道場前</div>
+                          <div class="boxI">アーチェリー部</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                        <p>アーチェリーをやってみたいという方、ぜひ体験に来てください！！<br>矢を打って気分爽快になって、日々のストレスを発散しちゃいましょー！！体験を来てくださった方には豪華景品を差し上げます！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#archery" class="detail-btn">料金</a>
+                            <a href="maps.html?area=archery#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>  
+                      <dl data-item-id="38"  class="accordion-list item list-item" data-yomi="kendo">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                          <img src="img/groups/club11.png" alt="" width="50" height="50" class="boxG">
+                          <div class="boxH" style="background-color: #37ba90;">新館前</div>
+                          <div class="boxI">剣道部</div>
+                          <div class="product__fav-item">
+                            <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                            </button>
+                          </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>剣道部です！今年も飲み物を販売します。ラムネ、午後の紅茶、カルピス、コーラ、スコール、ファンタグレープ、あやたか、カフェオレなど種類豊富です！メンメンメーン！！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#kendo" class="detail-btn">料金</a>
+                            <a href="maps.html?area=kendo#campus-map-out" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="accordion-container accordion-container2">
+                      <dl data-item-id="39"  class="accordion-list item list-item" data-yomi="cook">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                        <img src="img/groups/club12.png" alt="" width="50" height="50" class="boxG">
+                        <div class="boxH" style="background-color: #37ba90;">新館前</div>
+                        <div class="boxI">料理部</div>
+                        <div class="product__fav-item">
+                          <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                          </button>
+                        </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>私たち料理部はパウンドケーキを販売します!味はプレーン、ココア、抹茶、紅茶の4種類!フワッフワでおいしい! <br>奈良高校伝統の味です!真心こめて一本一本丁寧に焼きましたので、ぜひ来てください!</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="price.html#cooking" class="detail-btn">料金</a>
+                          <a href="maps.html?area=cook#campus-map-out" class="area-link map-btn">マップ</a>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="40" class="accordion-list item list-item" data-yomi="softtennis">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                   <img src="img/groups/club14.png" alt="" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館1階</div><div class="boxI">ソフトテニス部</div>
+                   <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                       </dt>
+                       <dd class="accordion-text list-answer">
+                          <p>的を狙ってポイントを稼げ！<br>豪華景品もあります！！<br>君も豪華景品をgetしよう。</p>
+                          <div style="display: flex;gap: 5%;">
+                          <a href="price.html#softtennis" class="detail-btn">料金</a>
+                          <a href="maps.html?area=softtennis#campus-map-1" class="area-link map-btn">マップ</a>
+                        </div>
+                      </dd>
+                       </dl>
+                       <dl data-item-id="41"  class="accordion-list item list-item" data-yomi="chemistry">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                   <img src="img/groups/club15.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館1階</div><div class="boxI">化学部</div>
+                   <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                       </dt>
+                       <dd class="accordion-text list-answer">
+                          <p>昨年に続き、今年もビスマスの結晶を販売します。ビスマスは特殊な金属でその結晶の独特な結晶機造や色合いは見る者の目を奪います。例年すぐに売り切れるので購人はお早めに。尚、今年は新作、化学カードゲームも販売するのでお楽しみに。</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#chemistry" class="detail-btn">料金</a>
+                            <a href="maps.html?area=chemistry#campus-map-1" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                       </dl>
+                       <dl data-item-id="42"  class="accordion-list item list-item" data-yomi="picture">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club13.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #ed1c24;">北館2階</div><div class="boxI">写真部</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>チェキで青丹祭の思い出を残しませんか？ <br>普通の写真とは一風変わった、エモい雰囲気で撮れます！ <br> ポストカードも販売しています。</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#photo" class="detail-btn">料金</a>
+                            <a href="maps.html?area=picuture#campus-map-2" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="43"  class="accordion-list item list-item" data-yomi="callgraphy">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                   <img src="img/groups/club17.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #f15922;">東館2階</div><div class="boxI">書道部</div>
+                   <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                       </dt>
+                       <dd class="accordion-text list-answer">
+                          <p>昨年度は好評につき売り切れとなった、うちわ、しおり販売！<br>どんな作品になっているかは来てからのお楽しみです。<br> 発席、お気に入りの一枚を見つけに来てください！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#callgraphy" class="detail-btn">料金</a>
+                            <a href="maps.html?area=calligraphy#campus-map-2" class="area-link map-btn">マップ</a>
+                          </div>
+                          </dd>
+                       </dl>
+                       <dl data-item-id="44"  class="accordion-list item list-item" data-yomi="biology">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club16.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #ed1c24;">北館3階</div><div class="boxI">生物部</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>生物部の部模擬では、DNAストラップ、アロエなどの植物、ハーバリウムの販売を行います! <br> DNAストラップはは一つ一つ違って、どれも素数なものとなっています。ぜひお越ください!</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#biology" class="detail-btn">料金</a>
+                            <a href="maps.html?area=biology#campus-map-3" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="45"  class="accordion-list item list-item" data-yomi="volleyball">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club18.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #ed1c24;">北館3階</div><div class="boxI">バレーボール部</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>こんにちは、バレーボール部です。<br>今年のバレーボール部の部模擬はアミューズメントパークをやります。<br>とってもおもしろいあそびを体験できるかも！！<br>景品もたくさん用意しているのでぜひJ1に遊びに来てください!</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#volleyball" class="detail-btn">料金</a>
+                            <a href="maps.html?area=vollyball#campus-map-3" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="46" class="accordion-list item list-item" data-yomi="art">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club19.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #f15922;">東館3階</div><div class="boxI">美術部</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>美術部の部員が精一杯つくったレアで、一点物の作品のみ販売しています。ここでしか手に入れられない作品の数をぜひここで手に入れてみては？青丹祭の思い出を彩るすばらしい作品に出会えること間違いなしです！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#art" class="detail-btn">料金</a>
+                            <a href="maps.html?area=art#campus-map-3" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="47" class="accordion-list item list-item" data-yomi="robot1">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                   <img src="img/footer/roboken.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館3階</div><div class="boxI">ロボット研究部</div>
+                   <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                       </dt>
+                       <dd class="accordion-text list-answer">
+                          <p>ロボット研究部ではゲームセンターをします。クレーンゲームやガチャガチャなど様々なゲームで遊べます。もちろん景品もあります。<br> そのほか、基盤キーホルダー、基盤定規の販売も行っています。ぜひ来てくだいさい！</p>
+                          <div style="display: flex;gap: 5%;"><a href="price.html#robot" class="detail-btn">料金</a>
+                          <a href="maps.html?area=robot#campus-map-3" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                       </dl>
+                       <dl data-item-id="48"  class="accordion-list item list-item" data-yomi="tea">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                   <img src="img/groups/club20.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color:#c9c907;">西館3階</div><div class="boxI">茶道部</div>
+                   <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                       </dt>
+                       <dd class="accordion-text list-answer">
+                          <p>茶道部は例年どおりお茶会を行います。また、普段から部活中に練習しているお点前を部員たちが披露する予定です。お茶菓子とお茶をお茶会ではお出ししますので、ぜひ来てください。お待ちしてます！！</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="price.html#teacermony" class="detail-btn">料金</a>
+                            <a href="maps.html?area=tea#campus-map-3" class="area-link map-btn">マップ</a>
+                          </div>
+                        </dd>
+                       </dl>
+                 </div>
+                 </div>
+                 </li>
+                 <li class="exhibition-list" data-category="exhibition-list"> 
+                  <div class="i-list-top"><img src="img/other/Club exhibition.png" alt=""></div>
+                  <div class="i-list-flex">
+                  <div class="accordion-container">
+                    <dl data-item-id="49" class="accordion-list item list-item" data-yomi="swimming2">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club21.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #0c4da2;">プール</div><div class="boxI">水泳競技部</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>●6(金)7(土)10:00~<br>Water Boys!! <br>あなたに見せたい景色がある。<br>日に映る月心が、景色が、あなたの世界を変えてゆく。<br>祭りだ！夏だ！シンクロだ！<br>洗練された肉体から織りなす一糸乱れぬ演技。<br>とくとご覧あれ！</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="maps.html?area=pool#campus-map-out" class="area-link map-btn">マップ</a>
+                          <a href="timetable.html?highlight=シンクロ" class="timetable-btn">タイムテーブル(1日目)</a>
+                          <a href="timetable.html?day=2&highlight=シンクロ" class="timetable-btn">タイムテーブル（2日目）</a>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="50"  class="accordion-list item list-item" data-yomi="calligraphy1">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club22.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #a6ce39;">中庭</div><div class="boxI">書道部(1)☆</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>●6(金)10:45~　7(土)9:45~<br>新しくなった中庭で行う初めての書道パフォーマンス。迫力満点メンバー全員の息のあったパフォーマンスを是非ご覧ください！</p>
+                        <div style="display: flex;gap: 5%;">
+                          <div style="display: flex;gap: 5%;">
+                            <a href="maps.html?area=yard#campus-map-out" class="area-link map-btn">マップ</a>
+                            <a href="timetable.html?highlight=書道部" class="timetable-btn">タイムテーブル(1日目)</a>
+                            <a href="timetable.html?day=2&highlight=書道部" class="timetable-btn">タイムテーブル（2日目）</a>
+                          </div>
+                        </dd>
+                    </dl>
+                    <dl data-item-id="51" class="accordion-list item list-item" data-yomi="chemistry2">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club23.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館1階</div><div class="boxI">化学部</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <p>今年も去年と同様に、化学実験会をやります。<br>何をするかはお楽しみ。でもワクワク、ドキドキになること問違いなし。<br>また、ビスマスの展示やフォトスポットもありますので、ぜひお越しください。<br>尚、新入部員は随時募集中ですので、宜しくお願いします。</p>
+                      <a href="maps.html?area=chemistry#campus-map-1" class="area-link map-btn">マップ</a>
+                    </dd>
+                    </dl>
+                    <dl data-item-id="52" class="accordion-list item list-item" data-yomi="flowerarrangement">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club24.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館1階</div><div class="boxI">華道部</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>華道部は、華道の作品展示を行っています。普段より少し豪華なお花を使って、自由に美しく生けられた作品たちをぜひ見に来て下さい！</p>
+                      <a href="maps.html?area=flowerarrangement#campus-map-1" class="area-link map-btn">マップ</a>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="53"  class="accordion-list item list-item" data-yomi="HyakuninIsshu">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club25.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館1階</div><div class="boxI">小倉百人一首部</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>こんにちは!かるた部です!<br>私たちはかるタワー王決定戦をやります。<br>かるタワーってなに？」と思ったそこのあなた!<br>ぜひチャレンジしに来てください！<br>袴を着た部員が待ってます!3年連続全国出場を果たしたかるた部の記録を破りに来てください!</p>
+                        <a href="maps.html?area=HyakuninIsshu#campus-map-1" class="area-link map-btn">マップ</a>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="54" class="accordion-list item list-item" data-yomi="geology">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club26.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館1階</div><div class="boxI">地学部</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>みなさん星に興味はありますか？<br>ありますよね!今年も地学部ではプラネタリウムを実施します。<br>中はとても暗くなっていますが、営業しています!ご安心ください。<br>みなさんのご来場を心よりお待ちしております。</p>
+                        <a href="maps.html?area=geology#campus-map-1" class="area-link map-btn">マップ</a>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="55" class="accordion-list item list-item" data-yomi="picture2">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club27.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #ed1c24;">北館2階</div><div class="boxI">写真部</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>部員が撮影した写真を展示しています！<br>各部員が切り撮った一瞬の時をぜひご覧ください！</p>
+                        <a href="maps.html?area=picture#campus-map-2" class="area-link map-btn">マップ</a>  
+                      </dd>
+                    </dl>
+                    <dl data-item-id="56"  class="accordion-list item list-item" data-yomi="callgraphy2">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club28.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #f15922;">東館2階</div><div class="boxI">書道部(2)</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>こんにちは、書道部です！ <br>作品選びから完成まで部員それぞれが時間をかけ丁寧に書き上げたい… <br>部員全員での合同作品など力作揃いの作品展。<br> ぜひ書道部で「白と黒の世界」を堪能してください！</p>
+                        <a href="maps.html?area=calligraphy#campus-map-2" class="area-link map-btn">マップ</a>  
+                      </dd>
+                    </dl>
+                    <dl data-item-id="57" class="accordion-list item list-item" data-yomi="ess">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club29.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館2階</div><div class="boxI">ESS部</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>こんにちは、ESS部です! <br> 私たちは主に英語でのディベートやALTレッスンをしています。青丹祭では寄せ書きと黒板アートでフォトスポットをつくっています。友達や家族と最高の写真をとりませんか？<br>ぜひS-4に来てください!!</p>
+                        <a href="maps.html?area=ess#campus-map-2" class="area-link map-btn">マップ</a>             
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="accordion-container accordion-container2">
+                    <dl data-item-id="58"  class="accordion-list item list-item" data-yomi="go">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                   <img src="img/groups/club30.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館2階</div><div class="boxI">囲碁将棋部</div>
+                   <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                       </dt>
+                       <dd class="accordion-text list-answer">
+                          <p>囲碁将棋部です!!!<br>部展示のほうでは詰め将棋・詰め碁を展するので、ぜひ挑戦してみてください！！！初心者から上級者法で楽しめる難易度になっています！！！</p>
+                          <a href="maps.html?area=Go#campus-map-2" class="area-link map-btn">マップ</a>  
+                        </dd>
+                       </dl>
+                       <dl data-item-id="59"  class="accordion-list item list-item" data-yomi="humanrights">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club31.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館2階</div><div class="boxI">人権文化研究会</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>2023年度人権文化研究会の活動の一環として訪問した、在日韓国・朝鮮人との歴史問題を抱える、京都府宇治市の「ウトロ」地区に関する、ポスター展示を行います。入部希望者も随時受け付けます。</p>
+                          <a href="maps.html?area=train#campus-map-2" class="area-link map-btn">マップ</a>  
+                        </dd>
+                      </dl>
+                      <dl data-item-id="60"  class="accordion-list item list-item" data-yomi="math">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club32.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館2階</div><div class="boxI">数学研究会</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>数学研究会はS6（3年6組）で部展示を行います。<br>今年は主に2つのことをします。<br>1つは、例年通りの作問した問題の展示です。<br>部員が知恵をしぼって作り上げました。<br>もう一つは、今年から部長の激しいアプローチで追加された、「素因数分解タイムアタック」です。<br>ルールは簡単、素早く素因数分解する。以上です。<br>興味がある人はぜひS6（3年6組）にお越しください。</p>
+                          <a href="maps.html?area=math#campus-map-2" class="area-link map-btn">マップ</a>  
+                        </dd>
+                      </dl>
+                      <dl data-item-id="61" class="accordion-list item list-item" data-yomi="Literature">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club33.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館2階</div><div class="boxI">文芸部</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>文芸部は1、2年生による部誌「自鳴琴」と、3年生による部誌「万華鏡」を頒布しています。過去の部誌の展示も行っているので、ぜひぜひ来てください!!</p>
+                          <a href="maps.html?area=Literature#campus-map-2" class="area-link map-btn">マップ</a>  
+                        </dd>
+                      </dl>
+                      <dl data-item-id="62"  class="accordion-list item list-item" data-yomi="train">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club34.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #faa61a;">南館2階</div><div class="boxI">鐡道愛好会</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>鐡道愛好会では鉄道模型の展示などを行います。皆さんもどこかで見たことあるようなおなじみの電車や、ちょっと懐かしい？電車も登場します。</p>
+                          <a href="maps.html?area=train#campus-map-2" class="area-link map-btn">マップ</a>  
+                        </dd>
+                      </dl>
+                      <dl data-item-id="66"  class="accordion-list item list-item" data-yomi="homeeconomics">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club45.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color:#faa61a;">南館2階</div><div class="boxI">家庭クラブ</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>生活の中で見つけた自分や家族の課題を夏休みを使って何ができるかを計画し、解決方法・改善方法を実施し、レポートにまとめました。被覆室に展示していますので、是非ご覧ください。</p>
+                          <a href="maps.html?area=homeeconomics#campus-map-2" class="area-link map-btn">マップ</a>             
+                        </dd>
+                      </dl>
+                      <dl data-item-id="63"class="accordion-list item list-item" data-yomi="biology2">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club35.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #ed1c24;">北館3階</div><div class="boxI">生物部</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>生物部の部展示は動物の展示をします。生物部が飼育しているモルモットや魚を見ることができます！動物に癒されたいという方は、ぜひぜひ生物室までお越しください。お待ちしてます！</p>
+                          <a href="maps.html?area=biology#campus-map-3" class="area-link map-btn">マップ</a>             
+                        </dd>
+                      </dl>
+                      <dl data-item-id="64"  class="accordion-list item list-item" data-yomi="art2">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                   <img src="img/groups/club36.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #f15922;">東館3階</div><div class="boxI">美術部</div>
+                   <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                       </dt>
+                       <dd class="accordion-text list-answer">
+                          <p>夏休みも筆をとって作品を書き続けた勇者(我が部員)の勲章を展示しております。あなた方の好みの作品に出会えること間違いなし!作者とのミート&グリート(予約不要)も承っています。ついでに見にくるだけでもいいのでぜひ足を運んでください。お願いします。(切実)</p>
+                          <a href="maps.html?area=art#campus-map-3" class="area-link map-btn">マップ</a>  
+                        </dd>
+                       </dl>
+                       <dl data-item-id="65"  class="accordion-list item list-item" data-yomi="robot2">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/footer/roboken.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color:#faa61a;">南館3階</div><div class="boxI">ロボット研究部</div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                        <p>ロボット研究部ではゲーム、ロボットを展示します。実際にロボット、ゲームを見て、触れて、体験することができます。ぜひ来てください！</p>
+                        <a href="maps.html?area=robot#campus-map-3" class="area-link map-btn">マップ</a>
+                      </dd>
+                      </dl>
+                 </div>
+                 </div>
+                 </li>
+                 <li class="stage-list" data-category="stage-list">
+                  <div class="i-list-top"><img src="img/other/show2.png" alt=""></div>
+                  <div class="i-list-flex">
+                  <div class="accordion-container">
+                    <dl data-item-id="67" class="accordion-list item list-item" data-yomi="Brassband">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                   <img src="img/groups/club38.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color: #008000;">体育館</div><div class="boxI">吹奏楽部</div>
+                   <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                       </dt>
+                       <dd class="accordion-text list-answer">
+                          <p>●6日(金)8:50~<br>吹奏楽部は朝イチからの演奏です！スーパーマリオ、青と夏、ドラマ「コンフィデンスマン JP」でおなじみの WeAre Confidence Man などをお届けします！音楽であなたの青丹祭をスタートさせませんか？<br>Listen to our music!!</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                            <a href="timetable.html?highlight=吹奏楽部" class="timetable-btn">タイムテーブル</a>
+                          </div>
+                        </dd>
+                       </dl>
+                       <dl data-item-id="68"  class="accordion-list item list-item" data-yomi="chorus">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                  <img src="img/groups/club39.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color:#008000;">体育館</div><div class="boxI">コーラス部 </div>
+                  <div class="product__fav-item">
+                    <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                    </button>
+                  </div>
+                      </dt>
+                      <dd class="accordion-text list-answer">
+                          <p>●6(金)9:40~<br>こんにちは！コーラス部です。２年生５人、１年生３人の計８人で一生懸命歌います！皆さんを楽しませられるように練習したので、ぜひ体育館まで聴きに来てください♪</p>
+                          <div style="display: flex;gap: 5%;">
+                            <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                            <a href="timetable.html?highlight=コーラス部" class="timetable-btn">タイムテーブル</a>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl data-item-id="69"   class="accordion-list item list-item" data-yomi="Japanesemusic">
+                        <dt class="accordion-title js-accordion-title list-question ">
+                 <img src="img/groups/club40.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color:#008000;">体育館</div><div class="boxI">邦楽部</div>
+                 <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                     </dt>
+                     <dd class="accordion-text list-answer">
+                        <p>●6(金)10:10~<br>邦楽部です！私たちは毎週火曜日と金曜日に2年生４人、１年生５人の計９人で楽しく活動しています。青丹祭に向けて一生懸命練習したので、是非お琴の凛とした美しい音色を聴いてみてください。</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                          <a href="timetable.html?highlight=邦楽部" class="timetable-btn">タイムテーブル</a>
+                        </div>
+                      </dd>
+                     </dl>
+                     <dl data-item-id="70"  class="accordion-list item list-item" data-yomi="dance">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club41.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color:#008000;">体育館</div><div class="boxI">ダンス部</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>●6(金)10:40~<br>ダンス部です!私たちはヒップホップ・ジャズ・ロック・ワックの4ジャンルと大会で披露したダンスを踊ります!他にも18thの先輩方のナンバーやラストには18,19,20thみんなで踊ります!絶対楽しいものにするのでみなさん時間をしっかりあけて是非見に来てくださいね♪</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                          <a href="timetable.html?highlight=ダンス部" class="timetable-btn">タイムテーブル</a>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="accordion-container">
+                    <dl data-item-id="71"   class="accordion-list item list-item" data-yomi="guitar">
+                     <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club42.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color:#008000;">体育館</div><div class="boxI">ギターマンドリン部</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>●6(金)11:05~<br>こんにちは！ギターマンドリン部です！今回、夏を感じられる爽やかな曲や J-POP の人気曲などを演奏します。沢山練習を重ねてきた私達だからこそ出せるギタマンの美しい音色を是非お楽しみください！！</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                          <a href="timetable.html?highlight=ギターマンドリン部" class="timetable-btn">タイムテーブル</a>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="72"   class="accordion-list item list-item" data-yomi="music-3">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club43.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color:#008000;">体育館</div><div class="boxI">探究音楽</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                        <p>●6(金)11:30~<br>私たち探究音楽・音楽Ⅲは、音大を志望する生徒の集 団...ではなくただ音楽が好きだという理由で結成された集団です。楽しむことを第一目標とし、合唱や合奏をします。熱意マシマシの私たちの演奏を是非お聴きください！</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                          <a href="timetable.html?highlight=探究音楽" class="timetable-btn">タイムテーブル</a>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl data-item-id="73"  class="accordion-list item list-item" data-yomi="band">
+                      <dt class="accordion-title js-accordion-title list-question ">
+                <img src="img/groups/club44.png" alt="" width="50" height="50" class="boxG"><div class="boxH" style="background-color:#008000;">体育館</div><div class="boxI">軽音楽部</div>
+                <div class="product__fav-item">
+                  <button type="button" class="favorite-button" data-item-id="<{$recommend[num].id}>">
+                  </button>
+                </div>
+                    </dt>
+                    <dd class="accordion-text list-answer">
+                      <p>2 年生 6 バンド、1 年生 7 バンドがそれぞれの舞台で演奏します！文化祭といえばバンド演奏！みなさんぜひ一緒に盛り上がりましょう！！</p>
+                        <div style="display: flex;gap: 5%;">
+                          <a href="maps.html?area=gym#campus-map-out" class="area-link map-btn">マップ</a>
+                          <a href="timetable.html?highlight=軽音楽部" class="timetable-btn">タイムテーブル</a>
+                        </div>
+                      </dd>
+                    </dl>
+                 </div>
+                 </div>
+                 </li>
+                 <li class="favorite-list" data-category="favorite-list">
+                  <div class="i-list-top"><img src="img/other/favorite.png" alt=""></div>
+                  <div class="i-list-flex">
+                  <div class="accordion-container">
+                       <dt id="favorite-items" class="favorite-items"></dt>
+                 </div>
+                 </div>
+                 </li>
+               </ul>
+              </div>
+              </div> 
+              <div class="top-bird">
+                <img class="bird3" src="img/background/bird-background.png" alt="">
+                <img class="bird4" src="img/background/bird-background.png" alt="">
+              </div>
+            </div>
+              <p id="page-top">
+                <a href="#">
+                <span></span>
+                <span></span>
+              </a>
+              </p>
+              <footer>
+                <img class="emblem" src="img/footer/logo-footer.png" alt="">
+                <p class="footer-text-15px">SEITANSAI 2025</p>
+                <p class="footer-text-30px">青丹祭2025</p>
+                <p class="roboken-p">&copy;2025 ロボット研究部</p>
+                <img class="roboken-emblem" src="img/footer/roboken.png" alt="">
+              </footer>
+              <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+              <script src="js/script.js"></script>
+              </body>
+              </html>
