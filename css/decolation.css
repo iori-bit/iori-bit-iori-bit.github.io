@@ -1,0 +1,45 @@
+
+@charset "UTF-8";
+.decoration-img{
+    width: 40%;
+    height: auto;
+    margin: 50px auto;
+}
+.decoration-class{
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    background-image: linear-gradient(90deg, #004aad 0 30px, transparent 50px 80px,#004aad  0 60px);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: bottom;
+    display: flex;
+    gap: 30px;
+}
+.decoration-span{
+    font-size: 50px;
+}
+.decoration-span2{
+    margin-top: 20px;
+}
+.decoration-flex{
+    display: flex;
+    margin: 50px;
+    gap: 10%;
+}
+/*スマホ版.decoration----------------------*/
+@media(max-width:800px){
+    .decoration-img{width: 80%;}
+    .decoration-span{
+        font-size: 35px;
+    }
+    .decoration-class{
+        font-size: 20px;
+        gap: 40px;
+    }
+    .decoration-flex{
+       flex-direction: column;
+       margin: 0 40px;
+    }
+}
